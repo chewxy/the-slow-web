@@ -1,0 +1,154 @@
+html,body {
+text-align:center;
+font-family: 'Gentium Book Basic', serif;
+background: url('../img/light_toast.png')
+}
+
+* {
+border:0;
+margin:0;
+outline:none;
+padding:0;
+}
+
+/** divs **/
+#top {
+background:#191919;
+display:none;
+text-align:center;
+}
+
+#container {
+margin:auto;
+text-align:left;
+width:875px;
+}
+
+#header {
+margin:40px 0 0;
+text-align:center;
+}
+
+#content {
+padding-top:80px;
+}
+
+/** switchContent **/
+#content_2,#content_3,#content_4 {
+display:none;
+}
+
+/** lavaLamp **/
+.lavalamp {
+float:right;
+height:29px;
+margin-right:40px;
+overflow:hidden;
+padding:5px;
+position:relative;
+}
+
+.lavalamp li {
+float:left;
+list-style:none;
+margin-right:40px;
+}
+
+.lavalamp li.back {
+border-bottom:5px solid #d7006c;
+height:30px;
+position:absolute;
+}
+
+.lavalamp li a {
+color:#191919;
+float:left;
+font-family:"Times New Roman", Times, serif;
+font-size:1.2em;
+height:30px;
+outline:none;
+overflow:hidden;
+position:relative;
+text-decoration:none;
+z-index:10;
+}
+
+.lavalamp li a:hover,p.top a:hover {
+color:#00a2dd;
+}
+
+/** slidePanel **/
+.slide {
+margin:0;
+padding:0;
+}
+
+.btn-slide {
+background:#191919;
+color:#fff;
+display:block;
+font-family:"Times New Roman", Times, serif;
+font-size:1em;
+height:20px;
+line-height:1em;
+padding:3px 0;
+text-align:center;
+text-decoration:none;
+}
+
+/** typography **/
+.name {
+color:#000;
+font-family: 'Old Standard TT', serif;
+font-size: 58px;
+font-weight:400;
+}
+
+.slogan {
+color:#191919;
+font-family: 'Old Standard TT', serif;
+font-weight:400;
+font-size:18px;
+}
+
+h2 {
+color:#191919;
+font-family: 'Old Standard TT', serif;
+font-size:29px;
+font-weight:400;
+font-variant:small-caps;
+padding-left:10px;
+}
+
+
+p {
+color:#191919;
+line-height:29px;
+margin-bottom:20px;
+padding-left:40px;
+text-align:justify;
+font-size:18px;
+}
+
+p.top {
+color:#fff;
+font-size:0.8em;
+line-height:1.5em;
+margin:0 auto;
+width:875px;
+}
+
+p.up a {
+color:#191919;
+float:right;
+font-size:1.2em;
+margin-bottom:20px;
+text-decoration:none;
+}
+
+/** miscellaneous (hr, etc.) **/
+hr {
+border-top:1px dotted #191919;
+height:1px;
+margin:20px 0;
+}
