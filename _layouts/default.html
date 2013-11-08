@@ -1,36 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+  <!-- Google Webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/ready.js"></script>
-
-<!-- lavaLamp jQuery -->
-<script type="text/javascript" src="js/lavalamp.js"></script>
-<script type="text/javascript" src="js/lavalamp_easing.js"></script>
-
-<!-- scrollTo jQuery -->
-<script type="text/javascript" src="js/scrollto.js"></script>
-<script type="text/javascript" src="js/localscroll.js"></script>
-
-<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
-
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="css/ie6.css">
-<![endif]-->
-
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{{ page.title }}</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
+<body class="{{ page.keyword }}">
 
-  <body class="{{ page.keyword }}">
-    <div id="up"></div>
-    <section id="container">
-      {{ content }}
-    </section>
+  <div id='top' class='container'>
+    {{ content }}
+  </div> <!-- /.container -->
 
-  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
