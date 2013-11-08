@@ -1,0 +1,11 @@
+@media screen and (min-width: $small-breakpoint) {
+    .left,
+    .right {
+        float: left;
+        display: inline;
+    }
+
+    .right {
+        float: right;
+    }
+}

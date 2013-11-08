@@ -1,0 +1,15 @@
+.content {
+    padding: 0 2em;
+}
+
+@media screen and (min-width: $small-breakpoint) {
+    .content {
+        @include span-columns(6);
+        @include omega();
+        padding: 0;
+    }
+
+        .content h2 {
+            margin-bottom: .5em;
+        }
+}

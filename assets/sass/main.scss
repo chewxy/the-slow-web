@@ -1,0 +1,176 @@
+/*------------------------------------*
+    $CONTENTS
+ *------------------------------------*/
+
+/**
+ * CONTENTS............You're reading it!
+ * UTILITIES IMPORT....Import assorted mixins and functions.
+ * NEAT................Variables for the grid system.
+ * LIBRARIES IMPORT....Import necessary libraries.
+ * BOX SIZING..........Set the global box sizing type.
+ * COLORS..............Variables defining site colors.
+ * FONT SIZES..........Variables defining font sizes.
+ * FONT FAMILIES.......Variables defining font stacks.
+ * BREAKPOINTS.........Media Query breakpoint values.
+ * QUOTES..............Global quotation settings.
+ * IMPORTS.............Import the other stylesheets.
+ */
+
+
+/*------------------------------------*
+    $UTILITIES IMPORT
+ *------------------------------------*/
+
+@import 'utilities/convert';
+@import 'utilities/font-size';
+@import 'utilities/list-functions';
+@import 'utilities/position';
+@import 'utilities/match';
+@import 'utilities/numeric';
+@import 'utilities/ellipsis';
+
+
+
+
+
+/*------------------------------------*
+    $NEAT
+ *------------------------------------*/
+
+$max-width: 56em;
+$gutter: 4em;
+$grid-columns: 8;
+$visual-grid: false;
+$visual-grid-index: 10;
+
+
+
+
+
+/*------------------------------------*
+    $LIBRARIES IMPORT
+ *------------------------------------*/
+
+ @import 'libraries/bourbon/bourbon';
+ @import 'libraries/neat/neat';
+
+
+
+
+
+/*------------------------------------*
+    $BOX SIZING
+ *------------------------------------*/
+
+$box-sizing: border-box;
+
+
+
+
+
+ /*------------------------------------*
+    $COLORS
+ *------------------------------------*/
+
+$background-color:     #f7f7f7;
+$alt-background-color: #fff;
+$text-color:           #506266;
+$main-color:           #d3643b;
+$accent-color:         #fb7848;
+
+
+
+
+
+/*------------------------------------*
+    $FONT SIZES
+ *------------------------------------*/
+
+$base-font-size:    16px!default;
+$base-line-height:  px(1.667)!default;
+
+$giga-size:         px(5)!default;
+$mega-size:         px(4)!default;
+$kilo-size:         px(3)!default;
+
+$h1-size:           px(2)!default;    // .alpha
+$h2-size:           px(1.75)!default; // .beta
+$h3-size:           px(1.5)!default;  // .gamma
+$h4-size:           px(1.33)!default; // .delta
+$h5-size:           px(1)!default;    // .epsilon
+$h6-size:           px(0.9)!default;  // .zeta
+
+$milli-size:        px(0.8)!default;
+$micro-size:        px(0.667)!default;
+
+
+
+
+
+/*------------------------------------*
+    $FONT FAMILIES
+ *------------------------------------*/
+
+$primary-font:   "Gentium Book Basic", Georgia, "Times New Roman", Times, serif;
+$secondary-font: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono-font:      Consolas, Monaco, 'Andale Mono', monospace;
+
+
+
+
+
+/*------------------------------------*
+    $BREAKPOINTS
+ *------------------------------------*/
+
+$small-breakpoint: 56em;
+
+
+
+
+
+ /*------------------------------------*
+    $QUOTES
+ *------------------------------------*/
+
+$english-quotes: true!default;
+$open-quote:     null;
+$close-quote:    null;
+
+@if $english-quotes != true {
+    $open-quote:  \00AB;
+    $close-quote: \00BB;
+}
+
+
+
+
+
+/*------------------------------------*
+    $IMPORTS
+ *------------------------------------*/
+
+/**
+ * Primitives
+ */
+
+@import 'primitives/reset';
+@import 'primitives/box-sizing';
+@import 'primitives/typography';
+@import 'primitives/quotes';
+@import 'primitives/color';
+@import 'primitives/image-replacement';
+@import 'primitives/hidden';
+@import 'primitives/clearfix';
+@import 'primitives/button';
+@import 'primitives/float';
+
+
+/**
+ * Modules
+ */
+
+@import 'modules/container';
+@import 'modules/header';
+@import 'modules/content';
+@import 'modules/footer';

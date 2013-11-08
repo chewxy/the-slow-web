@@ -1,0 +1,7 @@
+@function clamp($value, $min, $max) {
+  @return if($value > $max, $max, if($value < $min, $min, $value));
+}
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}

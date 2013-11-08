@@ -1,0 +1,19 @@
+.container {
+    padding: 2em 0;
+    margin: 0 1em 1em;
+    border-top: .5em solid #000;
+    background: $alt-background-color;
+    box-shadow: rgba(0,0,0,.1) 0 2px 3px;
+}
+
+@media screen and (min-width: $small-breakpoint) {
+    .container {
+        @include outer-container();
+        @include box-sizing(content-box);
+        margin-bottom: 4em;
+        padding-top: 2em;
+        padding-left: 4em;
+        padding-right: 4em;
+        background: $alt-background-color;
+    }
+}

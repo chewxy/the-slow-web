@@ -1,0 +1,70 @@
+* {
+    cursor: default;
+}
+
+a {
+    cursor: pointer;
+}
+
+::-moz-selection {
+    background: rgba(255,255,0,.5);
+}
+
+::selection {
+    background: rgba(255,255,0,.5);
+}
+
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+h1, .alpha   { @include font-size($h1-size);    }
+h2, .beta    { @include font-size($h2-size);    }
+h3, .gamma   { @include font-size($h3-size);    }
+h4, .delta   { @include font-size($h4-size);    }
+h5, .epsilon { @include font-size($h5-size);    }
+h6, .zeta    { @include font-size($h6-size);    }
+    .giga    { @include font-size($giga-size);  }
+    .mega    { @include font-size($mega-size);  }
+    .kilo    { @include font-size($kilo-size);  }
+    .milli   { @include font-size($milli-size); }
+    .micro   { @include font-size($micro-size); }
+
+body {
+    font-family: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1em;
+}
+
+h2 {
+    font-family: $secondary-font;
+    margin-top: 1.5em;
+    margin-bottom: .25em;
+    line-height: 1.3em;
+
+    & + p {
+        margin-top: 0;
+    }
+}
+
+code {
+    font-family: $mono-font;
+    padding: .1em .5em;
+    font-size: .8em;
+    background: rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.amp {
+    font-family: $primary-font;
+    font-style: italic;
+    font-weight: 300;
+}
