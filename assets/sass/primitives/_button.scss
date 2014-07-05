@@ -1,21 +1,24 @@
 .button {
-    @include font-size($milli-size);
-    padding: 0 1em;
-    background: rgba(0,0,0,.1);
-    border-radius: .25em;
+    @include font-size($h4-size);
+    display: block;
+    padding: .75em 0;
     text-decoration: none;
     color: rgba(0,0,0,.8);
-    font-family: $secondary-font;
-    font-weight: 700;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background: $main-color;
-        color: #fff;
+    &::after {
+        content: "\2192";
+        margin-left: .5em;
+        color: rgba(0,0,0,.5);
+        transition: .1s ease-in margin-left;
     }
 
-    &:active {
-        background: $accent-color;
+    &:hover,
+    &:focus {
+        color: rgba(0,0,0,.8);
+
+        &::after {
+            margin-left: 1em;
+            transition: .1s ease-in margin-left;
+        }
     }
 }

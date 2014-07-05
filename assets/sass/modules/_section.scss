@@ -1,0 +1,23 @@
+.section {
+    display: block;
+    padding: 2em 0;
+    border-bottom: 1px dashed rgba(0,0,0,.2);
+
+    &:first-of-type {
+        border-top: 1px dashed rgba(0,0,0,.2);
+    }
+
+    h2 {
+        margin-top: .5em;
+    }
+}
+
+    .section-content {
+        margin: 0 1em;
+    }
+
+@media screen and (min-width: $small-breakpoint) {
+    .section-content {
+        @include outer-container();
+    }
+}

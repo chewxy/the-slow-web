@@ -1,84 +1,16 @@
 .header {
-    border-bottom: 2px solid $background-color;
-    padding-bottom: .8em;
-    margin-bottom: 2em;
+    padding: 1em 0 0;
 }
 
     .title {
         @include font-size($h1-size);
         font-family: $secondary-font;
-        text-align: center;
+        font-weight: 500;
         margin: 0;
         color: #000;
-    }
 
-        .subtitle {
-            @include font-size($h3-size);
-            display: block;
-            font-weight: 500;
-            color: $main-color;
-            text-transform: lowercase;
-            font-variant: small-caps;
-            font-style: normal;
-            font-family: $primary-font;
-            -webkit-font-smoothing: antialiased;
-        }
-
-    .header-nav {
-        @extend .clearfix;
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 1em;
-        margin: 2em 2em 0;
-    }
-
-        .header-nav-item {
+        a {
             color: #000;
             text-decoration: none;
-            margin-right: .8em;
-            float: left;
         }
-
-@media screen and (min-width: $small-breakpoint) {
-    .header {
-        @include span-columns(2);
-        padding-top: 2em;
-        border-bottom: 0;
     }
-
-        .title {
-            text-align: left;
-        }
-
-        .header-nav {
-            margin: 2em 0 0;
-            counter-reset: section;
-        }
-
-            .header-nav-item {
-                display: block;
-                float: none;
-                padding: .5em 0;
-                position: relative;
-
-                &:before {
-                    @include font-size($micro-size);
-                    counter-increment: section;
-                    content: counter(section) ". ";
-                    color: #999;
-                    font-weight: 700;
-                    font-family: $secondary-font;
-                    margin-right: .5em;
-                }
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    border-left: .3em solid rgba(0,0,0,.1);
-                    border-top: .3em solid transparent;
-                    border-bottom: .3em solid transparent;
-                    margin-top: -.2em;
-                }
-            }
-}
