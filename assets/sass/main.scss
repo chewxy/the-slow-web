@@ -37,7 +37,7 @@
     $NEAT
  *------------------------------------*/
 
-$max-width: 56em;
+$max-width: 36em;
 $gutter: 4em;
 $grid-columns: 8;
 $visual-grid: false;
@@ -72,9 +72,8 @@ $box-sizing: border-box;
     $COLORS
  *------------------------------------*/
 
-$background-color:     #f7f7f7;
-$alt-background-color: #fff;
-$text-color:           #506266;
+$background-color:     #fff;
+$text-color:           #3e494f;
 $main-color:           #d3643b;
 $accent-color:         #fb7848;
 
@@ -86,7 +85,7 @@ $accent-color:         #fb7848;
     $FONT SIZES
  *------------------------------------*/
 
-$base-font-size:    16px!default;
+$base-font-size:    20px!default;
 $base-line-height:  px(1.667)!default;
 
 $giga-size:         px(5)!default;
@@ -174,3 +173,4 @@ $close-quote:    null;
 @import 'modules/header';
 @import 'modules/content';
 @import 'modules/footer';
+@import 'modules/section';
